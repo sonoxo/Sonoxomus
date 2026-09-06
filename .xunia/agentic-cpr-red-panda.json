@@ -1,0 +1,18 @@
+{
+  "id": "agentic-cpr-red-panda",
+  "name": "Agentic CPR",
+  "codename": "Red Panda",
+  "status": "active",
+  "host": "Sonoxomus",
+  "kind": "agent-runtime-integration",
+  "activation": "bash integrations/agentic-cpr-red-panda/activate.sh --install",
+  "run": "bash integrations/agentic-cpr-red-panda/activate.sh --run",
+  "capabilities": [
+    "chat-snapshot-to-background-agent",
+    "hub-queues",
+    "cpr-repair-loop",
+    "background-task-status",
+    "agent-credit-metering"
+  ],
+  "merge_policy": "isolated-module-no-core-overwrite"
+}
